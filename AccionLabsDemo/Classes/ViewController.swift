@@ -12,14 +12,19 @@ class ViewController: ParentViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setupUI()
+    }
+}
+
+extension ViewController {
+    
+    private func setupUI() {
+        self.title = "AcctionLabs Login"
     }
 }
 
 
-
 extension ViewController {
-    
     
     @IBAction func signIn(sender: Any) {
         
@@ -27,26 +32,13 @@ extension ViewController {
             guard error == nil else { return }
             
             // If sign in succeeded, display the app's main content View.
+            
+            if let detailsVC = self.storyboard?.instantiateViewController(withIdentifier: "DetailsVC") as? DetailsVC {
+                detailsVC.signedInUser = user
+                self.navigationController?.pushViewController(detailsVC, animated: true)
+            }
+            
         }
     }
-        
-    @IBAction private func signInTapped(sender: UIButton) {
-        
-//        Configuration.oktaOdic.signInWithBrowser(from: self) { [weak self] (stateManager, error) in
-//            
-//            guard error == nil else {
-//                return
-//            }
-//
-//            stateManager?.writeToSecureStorage()
-//
-//            // #2 Use tokens
-//            print("access token is: \(stateManager?.accessToken ?? "accesstoken not found")")
-//            print("id token is: \(stateManager?.idToken ?? "idtoken not found")")
-//            print("refresh token is: \(stateManager?.refreshToken ?? "refresh token not found")")
-//
-//        }
-    }
-    
 }
 

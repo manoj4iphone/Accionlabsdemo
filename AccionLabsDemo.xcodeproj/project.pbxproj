@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF358AA627958C34008F7AEC /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF358AA527958C34008F7AEC /* DetailsVC.swift */; };
+		AF358AA927958CF1008F7AEC /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF358AA827958CF0008F7AEC /* ParentViewController.swift */; };
+		AFBD89212794784C003A2776 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBD89202794784C003A2776 /* Configuration.swift */; };
 		AFD5B37F279326D200529BFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD5B37E279326D200529BFD /* AppDelegate.swift */; };
 		AFD5B381279326D200529BFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD5B380279326D200529BFD /* SceneDelegate.swift */; };
 		AFD5B383279326D200529BFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD5B382279326D200529BFD /* ViewController.swift */; };
@@ -16,6 +19,7 @@
 		AFD5B396279326D500529BFD /* AccionLabsDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD5B395279326D500529BFD /* AccionLabsDemoTests.swift */; };
 		AFD5B3A0279326D500529BFD /* AccionLabsDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD5B39F279326D500529BFD /* AccionLabsDemoUITests.swift */; };
 		AFD5B3A2279326D500529BFD /* AccionLabsDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD5B3A1279326D500529BFD /* AccionLabsDemoUITestsLaunchTests.swift */; };
+		BB663ACEDA61B2EB9807755B /* Pods_AccionLabsDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8281E919E657732B35AFF89B /* Pods_AccionLabsDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17BB10E8979057DEA017315F /* Pods-AccionLabsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AccionLabsDemo.release.xcconfig"; path = "Target Support Files/Pods-AccionLabsDemo/Pods-AccionLabsDemo.release.xcconfig"; sourceTree = "<group>"; };
+		2C4D48B32A2213E70CF5072B /* Pods-AccionLabsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AccionLabsDemo.debug.xcconfig"; path = "Target Support Files/Pods-AccionLabsDemo/Pods-AccionLabsDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		8281E919E657732B35AFF89B /* Pods_AccionLabsDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AccionLabsDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF358AA527958C34008F7AEC /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
+		AF358AA827958CF0008F7AEC /* ParentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
+		AFBD89202794784C003A2776 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		AFD5B37B279326D200529BFD /* AccionLabsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccionLabsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFD5B37E279326D200529BFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFD5B380279326D200529BFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB663ACEDA61B2EB9807755B /* Pods_AccionLabsDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +87,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6DC6BFCC70325B805765374B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C4D48B32A2213E70CF5072B /* Pods-AccionLabsDemo.debug.xcconfig */,
+				17BB10E8979057DEA017315F /* Pods-AccionLabsDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		838816AB7A158C14AFDEAB01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8281E919E657732B35AFF89B /* Pods_AccionLabsDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF358AA727958CB7008F7AEC /* ParentVC */ = {
+			isa = PBXGroup;
+			children = (
+				AF358AA827958CF0008F7AEC /* ParentViewController.swift */,
+			);
+			path = ParentVC;
+			sourceTree = "<group>";
+		};
+		AF358AAA27958DE6008F7AEC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AFD5B382279326D200529BFD /* ViewController.swift */,
+				AF358AA527958C34008F7AEC /* DetailsVC.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		AF358AAB27958DEF008F7AEC /* Appdelegate+Scene */ = {
+			isa = PBXGroup;
+			children = (
+				AFD5B37E279326D200529BFD /* AppDelegate.swift */,
+				AFD5B380279326D200529BFD /* SceneDelegate.swift */,
+			);
+			path = "Appdelegate+Scene";
+			sourceTree = "<group>";
+		};
 		AFD5B372279326D100529BFD = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +137,8 @@
 				AFD5B394279326D500529BFD /* AccionLabsDemoTests */,
 				AFD5B39E279326D500529BFD /* AccionLabsDemoUITests */,
 				AFD5B37C279326D200529BFD /* Products */,
+				6DC6BFCC70325B805765374B /* Pods */,
+				838816AB7A158C14AFDEAB01 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +155,13 @@
 		AFD5B37D279326D200529BFD /* AccionLabsDemo */ = {
 			isa = PBXGroup;
 			children = (
-				AFD5B37E279326D200529BFD /* AppDelegate.swift */,
-				AFD5B380279326D200529BFD /* SceneDelegate.swift */,
-				AFD5B382279326D200529BFD /* ViewController.swift */,
+				AFBD89202794784C003A2776 /* Configuration.swift */,
+				AF358AAB27958DEF008F7AEC /* Appdelegate+Scene */,
+				AF358AA727958CB7008F7AEC /* ParentVC */,
+				AF358AAA27958DE6008F7AEC /* Classes */,
 				AFD5B384279326D200529BFD /* Main.storyboard */,
-				AFD5B387279326D500529BFD /* Assets.xcassets */,
 				AFD5B389279326D500529BFD /* LaunchScreen.storyboard */,
+				AFD5B387279326D500529BFD /* Assets.xcassets */,
 				AFD5B38C279326D500529BFD /* Info.plist */,
 			);
 			path = AccionLabsDemo;
@@ -134,9 +191,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFD5B3A5279326D500529BFD /* Build configuration list for PBXNativeTarget "AccionLabsDemo" */;
 			buildPhases = (
+				2CCC17DA38E0C372DC643059 /* [CP] Check Pods Manifest.lock */,
 				AFD5B377279326D200529BFD /* Sources */,
 				AFD5B378279326D200529BFD /* Frameworks */,
 				AFD5B379279326D200529BFD /* Resources */,
+				9F9862706B029C37EFE3FF8D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +312,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2CCC17DA38E0C372DC643059 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AccionLabsDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F9862706B029C37EFE3FF8D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AccionLabsDemo/Pods-AccionLabsDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AccionLabsDemo/Pods-AccionLabsDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AccionLabsDemo/Pods-AccionLabsDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AFD5B377279326D200529BFD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -260,7 +361,10 @@
 			files = (
 				AFD5B383279326D200529BFD /* ViewController.swift in Sources */,
 				AFD5B37F279326D200529BFD /* AppDelegate.swift in Sources */,
+				AF358AA927958CF1008F7AEC /* ParentViewController.swift in Sources */,
+				AFBD89212794784C003A2776 /* Configuration.swift in Sources */,
 				AFD5B381279326D200529BFD /* SceneDelegate.swift in Sources */,
+				AF358AA627958C34008F7AEC /* DetailsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +538,7 @@
 		};
 		AFD5B3A6279326D500529BFD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C4D48B32A2213E70CF5072B /* Pods-AccionLabsDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -441,26 +546,29 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AccionLabsDemo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AccionLabsDemo;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.labs.demo.AccionLabsDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.acciondemo.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		AFD5B3A7279326D500529BFD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17BB10E8979057DEA017315F /* Pods-AccionLabsDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -468,21 +576,23 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AccionLabsDemo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AccionLabsDemo;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.labs.demo.AccionLabsDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.acciondemo.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
